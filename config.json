@@ -1,0 +1,31 @@
+{
+   "chainName":"hello-world",
+   "deployWaitTime":"120",
+   "user": {
+	"username": "JohnDoe",
+        "affiliation" : "group1"
+   },
+   "deployRequest":{
+      "chaincodePath":"chaincode",
+      "functionName":"init",
+      "args":[
+         "a",
+         "100",
+         "b",
+         "200"
+      ]
+   },
+   "invokeRequest":{
+      "functionName":"init_terms",
+      "args":[
+         "a",
+         "15"
+      ]
+   },
+   "queryRequest":{
+      "functionName":"query",
+      "args":[
+         "a"
+      ]
+   }
+}
